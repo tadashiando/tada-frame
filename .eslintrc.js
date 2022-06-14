@@ -1,20 +1,33 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
+    "vue/setup-compiler-macros": true
   },
-  'extends': ['plugin:vue/vue3-essential', 'eslint:recommended', 'plugin:storybook/recommended'],
+  extends: [
+    "plugin:vue/vue3-essential",
+    "eslint:recommended",
+    "plugin:storybook/recommended"
+  ],
   parserOptions: {
-    parser: '@babel/eslint-parser'
+    parser: "@babel/eslint-parser",
+    project: "tsconfig.json",
+    tsconfigRootDir: __dirname,
+    sourceType: "module"
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off"
   },
-  overrides: [{
-    files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
-    env: {
-      mocha: true
+  overrides: [
+    {
+      files: [
+        "**/__tests__/*.{j,t}s?(x)",
+        "**/tests/unit/**/*.spec.{j,t}s?(x)"
+      ],
+      env: {
+        mocha: true
+      }
     }
-  }]
+  ]
 };
