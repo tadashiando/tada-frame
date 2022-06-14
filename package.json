@@ -13,7 +13,6 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "register-service-worker": "^1.7.2",
-    "typescript": "4.7.3",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
@@ -29,6 +28,8 @@
     "@storybook/manager-webpack5": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
     "@storybook/vue3": "^6.5.9",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-plugin-pwa": "~5.0.0",
@@ -36,12 +37,14 @@
     "@vue/cli-plugin-unit-mocha": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "^2.0.0-0",
     "babel-loader": "^8.2.5",
     "chai": "^4.2.0",
     "eslint": "^7.32.0",
     "eslint-plugin-storybook": "^0.5.12",
     "eslint-plugin-vue": "^8.0.3",
+    "typescript": "^4.7.3",
     "vue-loader": "^16.8.3"
   }
 }
